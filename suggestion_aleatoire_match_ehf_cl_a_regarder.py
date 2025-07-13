@@ -151,7 +151,7 @@ def suggestion_aleatoire_match(data) :
 
 
 st.image(logo_ehf_cl , 
-           width = 250)
+           width = 200)
 
 for i in range(2) :
     st.write("")
