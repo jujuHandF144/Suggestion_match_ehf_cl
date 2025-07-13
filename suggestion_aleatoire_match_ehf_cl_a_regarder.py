@@ -162,18 +162,12 @@ if bouton_nouvel_essai == True :
 
     for i in range(3):
         st.write("")
-    st.write("Suggestion du jour :")
+    st.write(f"Suggestion du jour ({phase_match_alea}) :")
 
-    col1, col2, col3 = st.columns(3)
+    col1, col2 = st.columns(2)
     col1.image(logo_club_domicile_match_alea , 
                caption  = club_domicile_match_alea , 
                width = 100)
     col2.image(logo_club_exterieur_match_alea , 
                caption  = club_exterieur_match_alea , 
                width = 100)
-    for i in range(3):
-        col3.write("")
-    col3.write(f"({phase_match_alea})")
-    
-    
-
