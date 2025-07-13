@@ -160,8 +160,6 @@ if bouton_nouvel_essai == True :
     
     phase_match_alea, club_domicile_match_alea, club_exterieur_match_alea, logo_club_domicile_match_alea, logo_club_exterieur_match_alea = suggestion_aleatoire_match(data = df_matchs)
 
-    for i in range(2):
-        st.write("")
     st.write(f"Suggestion du jour ({phase_match_alea}) :")
 
     col1, col2, col3, col4 = st.columns(4)
