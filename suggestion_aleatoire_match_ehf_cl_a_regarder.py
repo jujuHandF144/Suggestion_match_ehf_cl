@@ -162,7 +162,7 @@ if bouton_nouvel_essai == True :
 
     st.write(f"Suggestion du jour ({phase_match_alea}) :")
 
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3, col4 = st.columns([0.275,0.225,0.225,0.275)
     col2.image(logo_club_domicile_match_alea , 
                caption  = club_domicile_match_alea , 
                width = 95)
