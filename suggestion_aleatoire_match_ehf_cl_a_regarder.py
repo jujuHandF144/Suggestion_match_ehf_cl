@@ -164,10 +164,10 @@ if bouton_nouvel_essai == True :
         st.write("")
     st.write(f"Suggestion du jour ({phase_match_alea}) :")
 
-    col1, col2 = st.columns(2)
-    col1.image(logo_club_domicile_match_alea , 
+    col1, col2, col3, col4 = st.columns(4)
+    col2.image(logo_club_domicile_match_alea , 
                caption  = club_domicile_match_alea , 
                width = 100)
-    col2.image(logo_club_exterieur_match_alea , 
+    col3.image(logo_club_exterieur_match_alea , 
                caption  = club_exterieur_match_alea , 
                width = 100)
