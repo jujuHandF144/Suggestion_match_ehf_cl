@@ -150,32 +150,30 @@ def suggestion_aleatoire_match(data) :
     return phase_match_alea, club_domicile_match_alea, club_exterieur_match_alea, logo_club_domicile_match_alea, logo_club_exterieur_match_alea
 
 
-
-col1, col2, col3, col4, col5, col6, col7 = st.columns([0.325,0.1,0.125,0.08,0.08,0.14,0.2])
-
-
-col1.image(logo_ehf_cl , 
+st.image(logo_ehf_cl , 
            width = 250)
 
 for i in range(2) :
-    col2.write("")
-bouton_nouvel_essai = col2.button("Suggestion")
+    st.write("")
+bouton_nouvel_essai = st.button("Suggestion")
 if bouton_nouvel_essai == True :
     
     phase_match_alea, club_domicile_match_alea, club_exterieur_match_alea, logo_club_domicile_match_alea, logo_club_exterieur_match_alea = suggestion_aleatoire_match(data = df_matchs)
 
+    col1, col2, col3 = st.columns(3)
+
     for i in range(3):
-        col3.write("")
-    col3.write("Suggestion du jour :")
-    col4.image(logo_club_domicile_match_alea , 
+        col1.write("")
+    st.write("Suggestion du jour :")
+    col1.image(logo_club_domicile_match_alea , 
                caption  = club_domicile_match_alea , 
                width = 100)
-    col5.image(logo_club_exterieur_match_alea , 
+    col2.image(logo_club_exterieur_match_alea , 
                caption  = club_exterieur_match_alea , 
                width = 100)
     for i in range(3):
-        col6.write("")
-    col6.write(f"({phase_match_alea})")
+        col3.write("")
+    col3.write(f"({phase_match_alea})")
     
     
 
