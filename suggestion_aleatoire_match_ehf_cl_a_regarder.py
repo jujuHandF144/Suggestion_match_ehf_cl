@@ -165,7 +165,7 @@ if bouton_nouvel_essai == True :
     col1, col2, col3, col4 = st.columns([0.275,0.225,0.225,0.275])
     col2.image(logo_club_domicile_match_alea , 
                caption  = club_domicile_match_alea , 
-               width = 95)
+               width = 85)
     col3.image(logo_club_exterieur_match_alea , 
                caption  = club_exterieur_match_alea , 
-               width = 95)
+               width = 85)
